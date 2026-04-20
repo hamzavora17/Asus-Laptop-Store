@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Admin Login</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <div class="card shadow p-4 col-md-4 mx-auto">
+        <h4 class="text-center mb-3">Admin Login</h4>
+		
+        <form th:action="@{/admin/login}" method="post">
+
+            <div class="mb-3">
+                <label>Username</label>
+                <input type="text" name="username" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label>Password</label>
+                <input type="password" name="password" class="form-control" required>
+            </div>
+			<p th:if="${error}" 
+			       th:text="${error}" 
+			       class="text-danger text-center mt-2">
+			    </p>
+
+            <button type="submit" class="btn btn-primary w-100">
+                Login
+            </button>
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ASUS Store</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+        .product-img {
+            height: 190px;
+            object-fit: cover;
+        }
+        .card {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border: none;
+        }
+        .card:hover {
+            transform: scale(1.03);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">ASUS Laptop Store</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+
+            <ul class="navbar-nav ms-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact" style="color:#007bff;">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about" style="color:#007bff;">About Us</a>
+                </li>
+            </ul>
+
+            <!-- SEARCH -->
+            <form class="d-flex ms-3">
+                <input id="searchInput" class="form-control" type="search"
+                       placeholder="Search laptop..."
+                       onkeyup="searchLaptops()">
+            </form>
+
+            <div class="ms-auto">
+                <a href="/login" class="btn btn-outline-primary">Login</a>
+                <a href="/admin/login" class="btn btn-outline-primary ms-2">Admin</a>
+				<a href="/admin/dashboard" class="btn btn-outline-primary ms-2">Dashboard</a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<br><br>
+
+
+
+<div class="container mt-4">
+<div class="row g-4">
+
+<!-- 1 -->
+<div class="col-md-3 laptop-card">
+<div class="card">
+<img src="/images/laptop1.jpg" class="img-fluid product-img">
+<div class="card-body text-center">
+<h6>Asus Zenbook 14</h6>
+<a href="/laptops/1" class="btn btn-primary btn-sm">View</a>
+</div>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="col-md-3 laptop-card">
+<div class="card">
+<img src="/images/laptop2.jpg" class="img-fluid product-img">
+<div class="card-body text-center">
+<h6>Asus Vivobook 15</h6>
+<a href="/laptops/2" class="btn btn-primary btn-sm">View</a>
+</div>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="col-md-3 laptop-card">
+<div class="card">
+<img src="/images/laptop3.jpg" class="img-fluid product-img">
+<div class="card-body text-center">
+<h6>Asus Vivobook 15 OLED</h6>
+<a href="/laptops/3" class="btn btn-primary btn-sm">View</a>
+</div>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="col-md-3 laptop-card">
+<div class="card">
+<img src="/images/laptop4.jpg" class="img-fluid product-img">
+<div class="card-body text-center">
+<h6>Asus VivoBook 14</h6>
+<a href="/laptops/4" class="btn btn-primary btn-sm">View</a>
+</div>
+</div>
+</div>
+
+<!-- 5 -->
+<div class="col-md-3 laptop-card">
+<div class="card">
+<img src="/images/laptop5.jpg" class="img-fluid product-img">
+<div class="card-body text-center">
+<h6>Asus ROG Flow X16</h6>
+<a href="/laptops/5" class="btn btn-primary btn-sm">View</a>
+</div>
+</div>
+</div>
+
+<!-- 6 -->
+<div class="col-md-3 laptop-card">
+<div class="card">
+<img src="/images/laptop6.png" class="img-fluid product-img">
+<div class="card-body text-center">
+<h6>ASUS TUF Gaming F15</h6>
+<a href="/laptops/6" class="btn btn-primary btn-sm">View</a>
+</div>
+</div>
+</div>
+
+<!-- 7 -->
+<div class="col-md-3 laptop-card">
+<div class="card">
+<img src="/images/laptop7.jpg" class="img-fluid product-img">
+<div class="card-body text-center">
+<h6>ASUS VivoBook S14</h6>
+<a href="/laptops/7" class="btn btn-primary btn-sm">View</a>
+</div>
+</div>
+</div>
+
+<!-- 8 -->
+<div class="col-md-3 laptop-card">
+<div class="card">
+<img src="/images/laptop8.jpg" class="img-fluid product-img">
+<div class="card-body text-center">
+<h6>ASUS VivoBook 16X</h6>
+<a href="/laptops/8" class="btn btn-primary btn-sm">View</a>
+</div>
+</div>
+</div>
+
+<!-- 9 -->
+<div class="col-md-3 laptop-card">
+<div class="card">
+<img src="/images/laptop9.jpg" class="img-fluid product-img">
+<div class="card-body text-center">
+<h6>ASUS Chromebook Flip</h6>
+<a href="/laptops/9" class="btn btn-primary btn-sm">View</a>
+</div>
+</div>
+</div>
+
+<!-- 10 -->
+<div class="col-md-3 laptop-card">
+<div class="card">
+<img src="/images/laptop10.jpg" class="img-fluid product-img">
+<div class="card-body text-center">
+<h6>ASUS ROG Flow X13</h6>
+<a href="/laptops/10" class="btn btn-primary btn-sm">View</a>
+</div>
+</div>
+</div>
+
+<!-- 11 -->
+<div class="col-md-3 laptop-card">
+<div class="card">
+<img src="/images/laptop11.webp" class="img-fluid product-img">
+<div class="card-body text-center">
+<h6>ASUS VivoBook Ultra K15</h6>
+<a href="/laptops/11" class="btn btn-primary btn-sm">View</a>
+</div>
+</div>
+</div>
+
+<!-- 12 -->
+<div class="col-md-3 laptop-card">
+<div class="card">
+<img src="/images/laptop12.jpg" class="img-fluid product-img">
+<div class="card-body text-center">
+<h6>ASUS ZenBook Pro Duo</h6>
+<a href="/laptops/12" class="btn btn-primary btn-sm">View</a>
+</div>
+</div>
+</div>
+
+<!-- 13 -->
+<div class="col-md-3 laptop-card">
+<div class="card">
+<img src="/images/laptop13.jpg" class="img-fluid product-img">
+<div class="card-body text-center">
+<h6>ASUS TUF Dash F15</h6>
+<a href="/laptops/13" class="btn btn-primary btn-sm">View</a>
+</div>
+</div>
+</div>
+
+<!-- 14 -->
+<div class="col-md-3 laptop-card">
+<div class="card">
+<img src="/images/laptop14.jpg" class="img-fluid product-img">
+<div class="card-body text-center">
+<h6>ASUS VivoBook Go 14</h6>
+<a href="/laptops/14" class="btn btn-primary btn-sm">View</a>
+</div>
+</div>
+</div>
+
+<!-- 15 -->
+<div class="col-md-3 laptop-card">
+<div class="card">
+<img src="/images/laptop15.jpg" class="img-fluid product-img">
+<div class="card-body text-center">
+<h6>ASUS ExpertBook P2</h6>
+<a href="/laptops/15" class="btn btn-primary btn-sm">View</a>
+</div>
+</div>
+</div>
+
+<!-- 16 -->
+<div class="col-md-3 laptop-card">
+<div class="card">
+<img src="/images/laptop16.jpg" class="img-fluid product-img">
+<div class="card-body text-center">
+<h6>ASUS ZenBook Flip 13</h6>
+<a href="/laptops/16" class="btn btn-primary btn-sm">View</a>
+</div>
+</div>
+</div>
+
+<!-- 17 -->
+<div class="col-md-3 laptop-card">
+<div class="card">
+<img src="/images/laptop17.jpg" class="img-fluid product-img">
+<div class="card-body text-center">
+<h6>ASUS ROG Strix Scar 15</h6>
+<a href="/laptops/17" class="btn btn-primary btn-sm">View</a>
+</div>
+</div>
+</div>
+
+<!-- 18 -->
+<div class="col-md-3 laptop-card">
+<div class="card">
+<img src="/images/laptop18.jpg" class="img-fluid product-img">
+<div class="card-body text-center">
+<h6>ASUS VivoBook 14X</h6>
+<a href="/laptops/18" class="btn btn-primary btn-sm">View</a>
+</div>
+</div>
+</div>
+
+<!-- 19 -->
+<div class="col-md-3 laptop-card">
+<div class="card">
+<img src="/images/laptop19.jpg" class="img-fluid product-img">
+<div class="card-body text-center">
+<h6>ASUS Chromebook C223</h6>
+<a href="/laptops/19" class="btn btn-primary btn-sm">View</a>
+</div>
+</div>
+</div>
+
+<!-- 20 -->
+<div class="col-md-3 laptop-card">
+<div class="card">
+<img src="/images/laptop20.avif" class="img-fluid product-img">
+<div class="card-body text-center">
+<h6>ASUS ROG Zephyrus M16</h6>
+<a href="/laptops/20" class="btn btn-primary btn-sm">View</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- SEARCH SCRIPT -->
+<script>
+function searchLaptops() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let cards = document.getElementsByClassName("laptop-card");
+
+    for (let i = 0; i < cards.length; i++) {
+        let text = cards[i].innerText.toLowerCase();
+
+        if (text.includes(input)) {
+            cards[i].style.display = "";
+        } else {
+            cards[i].style.display = "none";
+        }
+    }
+}
+</script>
+<script src='https://cdn.jotfor.ms/agent/embedjs/019d51a4c1b879fbbf1bec1a90ca4bd0af7f/embed.js'> </script>
+</body>
+</html>

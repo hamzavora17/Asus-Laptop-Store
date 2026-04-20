@@ -1,0 +1,97 @@
+/* Body & Global Styles */
+body {
+    padding-top: 90px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Product Card Styles */
+.product-card {
+    transition: all 0.4s ease;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.product-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Product Images */
+.product-img {
+    max-height: 160px;
+    object-fit: contain;
+}
+
+.main-product-img {
+    max-height: 400px;
+    transition: transform 0.4s ease;
+}
+
+.main-product-img:hover {
+    transform: scale(1.05);
+}
+
+/* Thumbnail Styles */
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.thumb {
+    width: 80px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.thumb:hover {
+    transform: scale(1.1);
+}
+
+.thumb.active {
+    border-color: #0d6efd;
+}
+
+/* Product Details */
+.product-details {
+    animation: fadeSlide 0.8s ease;
+}
+
+.spec-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.spec-list li {
+    margin-bottom: 8px;
+}
+
+/* Product Container */
+.product-container {
+    margin-top: 40px;
+}
+
+/* Footer */
+footer {
+    background: #ffffff;
+}
+
+/* Animations */
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
